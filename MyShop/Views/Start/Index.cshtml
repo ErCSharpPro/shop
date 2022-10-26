@@ -1,0 +1,36 @@
+@model StartModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>StartPage</title>
+</head>
+<body>
+<table border="1" cellpadding="5" >
+    <tr>
+     
+        <td>Наименование товара</td>
+        <td>Категория</td> 
+        <td>Cтоимоcть</td>
+      
+     
+        @foreach (List<string> list in Model.proList)
+        {
+            <tr>
+                <td>@list[0]</td>
+                <td>@list[1]</td>
+                <td>@list[2]</td>
+            </tr>
+        }
+       
+    </tr>
+</table>
+<p></p>
+<input type="button" value="Add" onclick="location.href='/Add/'"/>
+</body>
+</html>

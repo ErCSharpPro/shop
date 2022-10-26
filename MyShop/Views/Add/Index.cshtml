@@ -1,0 +1,27 @@
+@model AddModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Добавить элемент</title>
+    
+</head>
+<body>
+<div>
+<form>
+    <p>Имя товара</p>
+    <input type="text" asp-for="Name"/>
+    <p>Cтоимоcть</p>
+    <input type="text" asp-for="Cast"/>
+    <p>Категория</p>
+    <input type="text" asp-for="Category"/>
+    <input type="submit" value="Submit" asp-action="Submit"/>
+</form>
+</div>
+</body>
+</html>
